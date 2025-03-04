@@ -1,1 +1,70 @@
-<h1>欢迎</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | Hexo 站点</title>
+    <style>
+        :root { --primary-color: #2c3e50; }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header { text-align: center; }
+        .nav { 
+            margin: 1.5rem 0; 
+            display: flex; 
+            gap: 1rem;
+            justify-content: center;
+        }
+        .nav a { 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .nav a:hover { 
+            background: var(--primary-color); 
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>欢迎访问我的个人空间</h1>
+            <p>记录技术与生活的点滴</p>
+        </div>
+        
+        <div class="nav">
+            <a href="/">首页</a>
+            <a href="/archives">文章归档</a>
+            <a href="/about">关于我</a>
+        </div>
+
+        <section class="content">
+            <h2>最新动态</h2>
+            <!-- 此处可插入 Hexo 文章列表或自定义内容 -->
+            <p>🚀 正在建设中，敬请期待...</p>
+        </section>
+    </div>
+</body>
+</html>
+
